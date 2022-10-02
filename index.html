@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login or Sign up</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+
+  <body>
+    <div class="d-auth-wrap">
+      <div id="sign-in" class="auth active">
+        <div class="media">
+          <div class="media__heading">
+            <div class="media__logo">
+              <img src="./assets/images/logo.png" alt="" />
+              <span>Avocado</span>
+            </div>
+            <div class="switch-form-container">
+              <span>Don't have an account yet?</span>
+              <button class="switch-form-btn" data-selector="#sign-up">
+                Sign up
+              </button>
+            </div>
+          </div>
+          <div class="media__img">
+            <img src="./assets/images/welcome.png" alt="" />
+          </div>
+          <div class="media__content">
+            <h3>Welcome back</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="main">
+          <div class="heading">
+            <h2>Sign In</h2>
+            <p>Hey, Enter your details to get sign in to your account</p>
+          </div>
+
+          <form class="form" novalidate>
+            <div class="form-group">
+              <div class="form-item">
+                <label for="signin-email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="signin-email"
+                  class="form-input"
+                  required
+                />
+              </div>
+              <p class="form-message"></p>
+            </div>
+            <div class="form-group">
+              <div class="form-item">
+                <label for="signin-password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="signin-password"
+                  class="form-input"
+                  required
+                />
+                <button class="toggle-view-password" type="button">
+                  <img
+                    src="./assets/svg/eye.svg"
+                    alt="show password"
+                    class="form-icon show-pass"
+                  />
+                  <img
+                    src="./assets/svg/eye-close.svg"
+                    alt="hide password"
+                    class="form-icon hide-pass"
+                  />
+                </button>
+              </div>
+              <p class="form-message"></p>
+            </div>
+
+            <div class="form-bottom">
+              <div class="remember">
+                <input id="remember" type="checkbox" name="remember" />
+                <label for="remember">Remember Me</label>
+              </div>
+
+              <button
+                type="button"
+                class="forgot-password switch-form-btn"
+                data-selector="#forgot-password"
+              >
+                Forgot Password
+              </button>
+            </div>
+
+            <button class="submit-btn" type="submit">Login</button>
+          </form>
+
+          <div class="other-method">
+            <div class="other-method-title">
+              <span>Or Sign in with</span>
+            </div>
+
+            <div class="social-signin-list">
+              <a class="social-signin" href="https://www.google.com/">
+                <img
+                  class="social-signin-icon"
+                  src="./assets/svg/google.svg"
+                  alt="Google"
+                />
+                <span>Google</span>
+              </a>
+
+              <a class="social-signin" href="https://www.facebook.com/">
+                <img
+                  class="social-signin-icon"
+                  src="./assets/svg/facebook.svg"
+                  alt="Facebook"
+                />
+                <span>Facebook</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="sign-up" class="auth">
+        <div class="media">
+          <div class="media__heading">
+            <div class="media__logo">
+              <img src="./assets/images/logo.png" alt="" />
+              <span>Avocado</span>
+            </div>
+            <div class="switch-form-container">
+              <span>Have an account?</span>
+              <button class="switch-form-btn" data-selector="#sign-in">
+                Sign in
+              </button>
+            </div>
+          </div>
+          <div class="media__img">
+            <img src="./assets/images/signup.png" alt="" />
+          </div>
+          <div class="media__content">
+            <h3>Welcometo our website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="main sign-up">
+          <div class="heading">
+            <h2>Sign Up</h2>
+            <p>Enter your personal details and start journey with us.</p>
+          </div>
+
+          <form class="form" novalidate>
+            <div class="form-group">
+              <div class="form-item">
+                <label for="signup-userName" class="form-label"
+                  >User Name</label
+                >
+                <input
+                  type="text"
+                  name="userName"
+                  id="signup-userName"
+                  class="form-input"
+                  required
+                />
+              </div>
+              <p class="form-message"></p>
+            </div>
+
+            <div class="form-group">
+              <div class="form-item">
+                <label for="signup-email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="signup-email"
+                  class="form-input"
+                  required
+                />
+              </div>
+              <p class="form-message"></p>
+            </div>
+            <div class="form-group">
+              <div class="form-item">
+                <label for="signup-password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="signup-password"
+                  class="form-input"
+                  required
+                />
+                <button class="toggle-view-password" type="button">
+                  <img
+                    src="./assets/svg/eye.svg"
+                    alt="show password"
+                    class="form-icon show-pass"
+                  />
+                  <img
+                    src="./assets/svg/eye-close.svg"
+                    alt="hide password"
+                    class="form-icon hide-pass"
+                  />
+                </button>
+              </div>
+              <p class="form-message"></p>
+            </div>
+
+            <div class="form-group">
+              <div class="form-item">
+                <label for="confirm-password" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                  class="form-input"
+                  required
+                />
+                <button class="toggle-view-password" type="button">
+                  <img
+                    src="./assets/svg/eye.svg"
+                    alt="show password"
+                    class="form-icon show-pass"
+                  />
+                  <img
+                    src="./assets/svg/eye-close.svg"
+                    alt="hide password"
+                    class="form-icon hide-pass"
+                  />
+                </button>
+              </div>
+              <p class="form-message"></p>
+            </div>
+
+            <button class="submit-btn" type="submit">Create Account</button>
+          </form>
+
+          <div class="other-method">
+            <div class="other-method-title">
+              <span>Or Sign up with</span>
+            </div>
+
+            <div class="social-signin-list">
+              <a class="social-signin" href="https://www.google.com/">
+                <img
+                  class="social-signin-icon"
+                  src="./assets/svg/google.svg"
+                  alt="Google"
+                />
+                <span>Google</span>
+              </a>
+
+              <a class="social-signin" href="https://www.facebook.com/">
+                <img
+                  class="social-signin-icon"
+                  src="./assets/svg/facebook.svg"
+                  alt="Facebook"
+                />
+                <span>Facebook</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="forgot-password" class="auth">
+        <div class="media">
+          <div class="media__heading">
+            <div class="media__logo">
+              <img src="./assets/images/logo.png" alt="" />
+              <span>Avocado</span>
+            </div>
+            <div class="switch-form-container">
+              <span>Have an account?</span>
+              <button class="switch-form-btn" data-selector="#sign-in">
+                Sign in
+              </button>
+            </div>
+          </div>
+          <div class="media__img">
+            <img src="./assets/images/forgot-password.png" alt="" />
+          </div>
+          <div class="media__content">
+            <h3>Forgot Your Password?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="main">
+          <div class="heading">
+            <h2>Reset Password?</h2>
+            <p>
+              Enter the email address you used when you joined and we'll send
+              you instructions to reset your password.
+            </p>
+          </div>
+
+          <form class="form" novalidate>
+            <div class="form-group">
+              <div class="form-item">
+                <label for="forgot-email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="forgot-email"
+                  class="form-input"
+                  required
+                />
+              </div>
+              <p class="form-message"></p>
+            </div>
+
+            <button class="submit-btn" type="submit">Reset Password</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

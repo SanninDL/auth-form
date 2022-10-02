@@ -1,0 +1,22 @@
+@media screen and (max-width: 1024px) {
+  .d-auth-wrap .main {
+    padding: 30px;
+  }
+  .d-auth-wrap .media__heading {
+    flex-direction: column;
+    gap: 10px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .d-auth-wrap .auth.active {
+    display: block;
+  }
+  .d-auth-wrap .media {
+    margin-bottom: 20px;
+  }
+  .d-auth-wrap .media__img,
+  .d-auth-wrap .media__content {
+    display: none;
+  }
+}
