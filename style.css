@@ -105,13 +105,12 @@ html {
   padding-bottom: 30px;
 }
 .d-auth-wrap .heading h2 {
-    font-size: 30px;
-    margin-bottom: 30px;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 .d-auth-wrap .form-group {
   padding-bottom: 30px;
   position: relative;
-
 }
 .form-item {
   position: relative;
@@ -151,7 +150,6 @@ html {
 
   display: flex;
   align-items: center;
-
 }
 .d-auth-wrap .form-icon {
   width: 20px;
@@ -187,92 +185,91 @@ html {
   display: block;
 }
 .d-auth-wrap .form-bottom {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
 }
 .form .remember {
-    display: flex;
-    align-items: center;
-    color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
 }
 
 .form .remember label {
-    cursor: pointer;
+  cursor: pointer;
 }
 .form .remember input {
-    accent-color: var(--primary-color);
-    margin-right: 10px;
-    width: 14px;
-    height: 14px;
+  accent-color: var(--primary-color);
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
 }
 .d-auth-wrap .forget-password {
-    color: var(--primary-color);
-    text-decoration: none;
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .d-auth-wrap .submit-btn {
-    padding: 8px 16px;
-    width: 350px;
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 6px;
-    font-family: inherit;
-    color: white;
-    cursor: pointer;
-    transition: all linear 0.2s;
+  padding: 8px 16px;
+  width: 350px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  color: white;
+  cursor: pointer;
+  transition: all linear 0.2s;
 }
 .d-auth-wrap .submit-btn:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .d-auth-wrap .other-method {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 .d-auth-wrap .other-method-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0 6px
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 6px;
 }
 .d-auth-wrap .other-method-title::before {
-    content: '';
-    display: block;
-    width: 16px;
-    height: 2px;
-    background-color: var(--text-color);
+  content: "";
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: var(--text-color);
 }
 .d-auth-wrap .other-method-title::after {
-    content: '';
-    display: block;
-    width: 16px;
-    height: 2px;
-    background-color: var(--text-color);
+  content: "";
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: var(--text-color);
 }
 .d-auth-wrap .social-signin-list {
-    display: flex;
-    justify-content: center;
-    gap: 0 16px;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 0 16px;
+  margin-top: 20px;
 }
 .d-auth-wrap .social-signin {
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    gap: 0 8px;
-    min-width: 120px;
-    padding: 6px;
-    border: 1px solid var(--primary-color);
-    border-radius: 6px;
-    color: inherit;
-
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0 8px;
+  min-width: 120px;
+  padding: 6px;
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+  color: inherit;
 }
 .d-auth-wrap .social-signin:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 .d-auth-wrap .social-signin-icon {
-    width: 26px;
+  width: 26px;
 }
 
 /* ===== animation ===== */
@@ -304,5 +301,29 @@ html {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+  .d-auth-wrap .main {
+    padding: 30px;
+  }
+  .d-auth-wrap .media__heading {
+    flex-direction: column;
+    gap: 10px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .d-auth-wrap .auth.active {
+    display: block;
+  }
+  .d-auth-wrap .media {
+    margin-bottom: 20px;
+  }
+  .d-auth-wrap .media__img,
+  .d-auth-wrap .media__content {
+    display: none;
   }
 }

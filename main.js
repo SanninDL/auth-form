@@ -124,10 +124,9 @@
 
             // All field is valid
             if (formValues) {
-                e.target.reset();
-                // put your handle submit code here ...
+                // put your custom handle code before submit here ...
 
-
+                e.target.submit();
             }
         }
 
