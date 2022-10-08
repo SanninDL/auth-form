@@ -14,7 +14,7 @@
 
 html {
   font-family: var(--primary-font);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   color: var(--text-color);
 }
@@ -176,6 +176,7 @@ html {
 }
 .d-auth-wrap .form-message {
   color: var(--error-color);
+  font-size: 12px;
   position: absolute;
   bottom: 8px;
   left: 0;
@@ -259,7 +260,7 @@ html {
   align-items: center;
   justify-content: center;
   gap: 0 8px;
-  min-width: 120px;
+  min-width: 140px;
   padding: 6px;
   border: 1px solid var(--primary-color);
   border-radius: 6px;
@@ -305,6 +306,12 @@ html {
 }
 
 /* responsive */
+@media screen and (min-width: 1440px) {
+  .d-auth-wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 1024px) {
   .d-auth-wrap .main {
     padding: 30px;
